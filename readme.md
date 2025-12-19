@@ -99,7 +99,7 @@ user-analytics-app/
 
 ### Prerequisites
 - Node.js v22.21.1 or higher
-- MongoDB (local or Atlas)
+- MongoDB 
 - npm or yarn
 
 ### 1. Clone Repository
