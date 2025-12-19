@@ -7,13 +7,13 @@
 ## 📸 Screenshots
 
 ### 1. Dashboard – Sessions View
-![Sessions View](backend/public/1.png)
+![Sessions View](Backend/public/1.png)
 
 ### 2. Dashboard – User Journey
-![User Journey](backend/public/2.png)
+![User Journey](Backend/public/2.png)
 
 ### 3. Dashboard – Heatmap View
-![Heatmap View](backend/public/3.png)
+![Heatmap View](Backend/public/3.png)
 
 ## 🎯 Features
 
