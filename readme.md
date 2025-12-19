@@ -104,7 +104,7 @@ user-analytics-app/
 
 ### 1. Clone Repository
 ```
-git clone https://github.com/yourusername/user-analytics-app.git
+git clone https://github.com/Hitendra007/EventsTracker.git
 cd user-analytics-app
 ```
 
@@ -116,10 +116,8 @@ npm install
 # Create .env file
 cat > .env << EOF
 PORT=8000
-MONGODB_URI=mongodb://localhost:27017
-DB_NAME=useranalytics
+MONGODB_URI=your mongo uri
 CORS_ORIGIN=*
-NODE_ENV=development
 EOF
 
 # Start backend
