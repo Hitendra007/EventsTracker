@@ -139,21 +139,13 @@ Frontend runs on `http://localhost:5173`
 
 ### 4. MongoDB Setup
 ```
-# Option 1: Local MongoDB
-mongod
-
-# Option 2: MongoDB Atlas
+ MongoDB Atlas
 # Update MONGODB_URI in .env with your Atlas connection string
 ```
 
 ### 5. Test Tracking
 Open `demo/index.html` in your browser:
 ```
-# Serve demo pages (from project root)
-npx serve demo
-```
-
-Visit `http://localhost:3000` and interact with the demo pages.
 
 ## 📡 API Endpoints
 
