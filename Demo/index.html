@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo Page - User Analytics</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      padding: 20px;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: white;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    }
+    
+    h1 {
+      color: #667eea;
+      margin-bottom: 10px;
+    }
+    
+    .status {
+      background: #e0e7ff;
+      padding: 15px;
+      border-radius: 8px;
+      margin: 20px 0;
+      border-left: 4px solid #667eea;
+    }
+    
+    .button-group {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin: 30px 0;
+    }
+    
+    button {
+      background: #667eea;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: all 0.3s;
+    }
+    
+    button:hover {
+      background: #764ba2;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+    }
+    
+    .content {
+      margin: 30px 0;
+      line-height: 1.6;
+    }
+    
+    .links {
+      margin-top: 30px;
+      padding-top: 30px;
+      border-top: 2px solid #e5e7eb;
+    }
+    
+    .links a {
+      color: #667eea;
+      text-decoration: none;
+      margin-right: 20px;
+      font-weight: 500;
+    }
+    
+    .links a:hover {
+      text-decoration: underline;
+    }
+    
+    .info-box {
+      background: #f3f4f6;
+      padding: 20px;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+    
+    code {
+      background: #1f2937;
+      color: #10b981;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: 'Courier New', monospace;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🎯 Analytics Demo Page</h1>
+    <p style="color: #6b7280; margin-bottom: 20px;">This page demonstrates event tracking in action</p>
+    
+    <div class="status">
+      <strong>✅ Tracking Active:</strong> Your clicks and page views are being recorded!<br>
+      <small>Session ID is stored in localStorage. Open the console to see tracked events.</small>
+    </div>
+    
+    <div class="info-box">
+      <h3 style="margin-bottom: 10px;">What's Being Tracked?</h3>
+      <ul style="margin-left: 20px;">
+        <li><code>page_view</code> - Tracked when you load this page</li>
+        <li><code>click</code> - Tracked every time you click anywhere</li>
+        <li><code>session_id</code> - Your unique session identifier</li>
+        <li><code>coordinates</code> - X and Y position of each click</li>
+      </ul>
+    </div>
+    
+    <div class="button-group">
+      <button onclick="alert('Button 1 clicked! Check the console.')">Click Me 1</button>
+      <button onclick="alert('Button 2 clicked!')">Click Me 2</button>
+      <button onclick="alert('Button 3 clicked!')">Click Me 3</button>
+      <button onclick="console.log('You clicked button 4!')">Click Me 4</button>
+    </div>
+    
+    <div class="content">
+      <h2>Try These Actions:</h2>
+      <p>👆 Click the buttons above</p>
+      <p>🖱️ Click anywhere on this page</p>
+      <p>🔄 Refresh the page to see page_view events</p>
+      <p>📊 Open your dashboard to see all tracked data</p>
+    </div>
+    
+    <div class="content">
+      <h2>How It Works</h2>
+      <p>
+        This page includes our tracking script (<code>tracker.js</code>) which:
+      </p>
+      <ol style="margin-left: 20px; margin-top: 10px;">
+        <li>Generates a unique session ID stored in localStorage</li>
+        <li>Tracks page views automatically when the page loads</li>
+        <li>Captures click events with X,Y coordinates</li>
+        <li>Sends all data to the backend API</li>
+      </ol>
+    </div>
+    
+    <div class="links">
+      <h3 style="margin-bottom: 15px;">Navigation Links</h3>
+      <a href="?page=about">About Page</a>
+      <a href="?page=products">Products Page</a>
+      <a href="?page=contact">Contact Page</a>
+      <a href="page2.html">Go to Page 2</a>
+    </div>
+    
+    <div style="margin-top: 40px; text-align: center; color: #6b7280;">
+      <p>💡 Open Developer Console (F12) to see tracking events in real-time</p>
+    </div>
+  </div>
+  
+  <!-- Include the tracking script -->
+  <script src="../Backend/public/tracker.js"></script>
+</body>
+</html>

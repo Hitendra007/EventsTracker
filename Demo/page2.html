@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page 2 - User Analytics</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+      min-height: 100vh;
+      padding: 20px;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: white;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    }
+    
+    h1 {
+      color: #764ba2;
+      margin-bottom: 10px;
+    }
+    
+    .status {
+      background: #e0e7ff;
+      padding: 15px;
+      border-radius: 8px;
+      margin: 20px 0;
+      border-left: 4px solid #764ba2;
+    }
+    
+    .button-group {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin: 30px 0;
+    }
+    
+    button {
+      background: #764ba2;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: all 0.3s;
+    }
+    
+    button:hover {
+      background: #667eea;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(118, 75, 162, 0.4);
+    }
+    
+    .content {
+      margin: 30px 0;
+      line-height: 1.6;
+    }
+    
+    .links {
+      margin-top: 30px;
+      padding-top: 30px;
+      border-top: 2px solid #e5e7eb;
+    }
+    
+    .links a {
+      color: #764ba2;
+      text-decoration: none;
+      margin-right: 20px;
+      font-weight: 500;
+    }
+    
+    .links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>📄 Page 2 - Analytics Tracking</h1>
+    <p style="color: #6b7280; margin-bottom: 20px;">This is the second demo page for testing navigation tracking</p>
+    
+    <div class="status">
+      <strong>✅ Tracking Active</strong> Your navigation to this page has been recorded!<br>
+      <small>Session ID persists across pages. Check the console to see events.</small>
+    </div>
+    
+    <div class="button-group">
+      <button onclick="alert('Action A completed!')">Action A</button>
+      <button onclick="alert('Action B completed!')">Action B</button>
+      <button onclick="console.log('Action C logged')">Action C</button>
+    </div>
+    
+    <div class="content">
+      <h2>🎯 Testing Multi-Page Sessions</h2>
+      <p>Navigate between pages to see how the tracker maintains your session across different URLs.</p>
+      
+      <ul style="margin: 20px 0 20px 20px;">
+        <li>Each page view is tracked with the same session ID</li>
+        <li>Click events on different pages are all associated with your session</li>
+        <li>The user journey shows the complete path across all pages</li>
+      </ul>
+    </div>
+    
+    <div class="links">
+      <h3 style="margin-bottom: 15px;">🔗 Navigation</h3>
+      <a href="index.html">← Back to Page 1</a>
+      <a href="?page=about">About</a>
+      <a href="?page=products">Products</a>
+    </div>
+    
+    <div style="margin-top: 40px; text-align: center; color: #6b7280;">
+      <p>💡 Open Developer Console (F12) to see tracking events in real-time</p>
+    </div>
+  </div>
+
+  <script src="../Backend/public/tracker.js"></script>
+</body>
+</html>
