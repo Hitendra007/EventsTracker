@@ -156,6 +156,7 @@ Open `demo/index.html` in your browser:
 | `GET` | `/api/v1/events/sessions/:sessionId` | Fetch all events for a session |
 | `GET` | `/api/v1/events/heatmap?pageurl=<url>` | Fetch click data for heatmap |
 | `GET` | `/api/v1/events/pages` | Fetch all unique page URLs |
+```
 
 ### Example API Usage
 
@@ -171,13 +172,8 @@ curl -X POST http://localhost:8000/api/v1/events \
     "clickx": 250,
     "clicky": 150
   }'
-```
 
-**Get Sessions**
 ```
-curl http://localhost:8000/api/v1/events/sessions
-```
-
 ## 🎨 Using the Tracking Script
 
 Add to any webpage:
