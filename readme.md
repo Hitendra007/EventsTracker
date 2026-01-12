@@ -192,7 +192,7 @@ The script automatically:
 ### Session Management
 - Session ID format: `session{timestamp}{random}`
 - Stored in `localStorage` as `analytics_session_id`
-- Persists across page navigations [file:2]
+- Persists across page navigations
 
 ### Event Schema
 ```
@@ -217,7 +217,7 @@ The script automatically:
 - Single-user environment (no authentication required)
 - All timestamps in Unix milliseconds
 - Session ID stored in localStorage (not cookies)
-- Click coordinates relative to viewport [file:2]
+- Click coordinates relative to viewport 
 
 ### Trade-offs
 1. **localStorage vs Cookies**: Used localStorage for simplicity; cookies would persist across browser sessions
